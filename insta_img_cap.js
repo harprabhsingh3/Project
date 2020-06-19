@@ -36,7 +36,7 @@ let url,pwd,user;
     await tab.keyboard.press("Enter");
     await tab.waitForSelector("span[class='TqC_a']");
     await tab.click("span[class='TqC_a']");
-    await tab.keyboard.type('khaleeljamundae10',{ delay: 300 })
+    await tab.keyboard.type('YOUR_USERNAME',{ delay: 300 })
     await tab.waitForSelector(".z556c",{ visible: true });
     await tab.click(".z556c",{ waitUntil: "networkidle2" })
     
@@ -78,7 +78,7 @@ let url,pwd,user;
     const input_UploadHandle = await tabnew.$('input[type=file]');
     await tabnew.waitForSelector("a[class='cc-btn cc-allow']",{ waitUntil: "networkidle2" });
     await tabnew.click("a[class='cc-btn cc-allow']");
-   for(let i=0;i<11;i++)
+   for(let i=0;i<5;i++)
     { 
     let file_ToUpload = 'photo'+(i)+'.jpg';
 	  // Sets the value of the file input to fileToUpload
@@ -107,7 +107,7 @@ let url,pwd,user;
     await page.waitForSelector('button.aOOlW.HoLwm');
     await page.click('button.aOOlW.HoLwm');
     
-    for(let i = 0;i < 11;i++){
+    for(let i = 0;i < 5;i++){
     await page.waitForSelector("svg[aria-label='New Post']");
     
     var futureFileChooser = page.waitForFileChooser();
